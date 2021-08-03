@@ -25,10 +25,11 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="panier.html">
-                <button type="button" class="btn position-relative" aria-label="Panier">
-                  <h2><i class="fas fa-shopping-cart"></i></h2>
-                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-primary border border-light rounded-circle">
-                  <span class="visually-hidden">New alerts</span>
+              <button type="button" class="btn position-relative" aria-label="Panier">
+                <h2><i class="fas fa-shopping-cart"></i></h2>
+                <span id="badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                  <span class="visually-hidden">Nouveaux produits</span>
                 </span>
               </button>
             </a>
@@ -36,69 +37,7 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="products" class="table-responsive">
-        <table class="table">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Image</th>
-              <th scope="col">Nom</th>
-              <th scope="col">Lentilles</th>
-              <th scope="col">Prix</th>
-              <th scope="col">Quantité</th>
-            </tr>
-          </thead>
-          <tbody id="table-body">
-          </tbody>
-          <tfoot>
-            <th>Total</tr>
-            <tr id="total-price"></tr>
-          </tfoot>
-        </table>
-      </section>
-      <section id="form" >
-      <div class="bg-light px-4 py-3  font-weight-bold">
-        <h5>Commander</h5>
-        <form id="form" class="row g-3 needs-validation" action="commande.html" method="POST" novalidate>
-          <div class="col-md-4">
-            <label for="validationFirstname" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="validationFirstname" placeholder="John" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationLastname" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="validationLastname" placeholder="Smith" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="validationEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="validationEmail" placeholder="name@example.com">
-          </div>
-          <div class="col-md-6">
-            <label for="validationAddress" class="form-label">Adresse</label>
-            <input type="text" class="form-control" id="validationAddress" required>
-            <div class="invalid-feedback">
-              Please provide a valid address.
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label for="validationCity" class="form-label">Ville</label>
-            <input type="text" class="form-control" id="validationCity" required>
-            <div class="invalid-feedback">
-              Please provide a valid city.
-            </div>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-dark" type="submit">Valider la commande</button>
-          </div>
-        </form>
-      </div>
-    </section>
+    <main id="app">
     </main>
 
     <!-- Footer -->
@@ -111,8 +50,8 @@
       </ul>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="tools.js"></script>
+    <script src="formatHTML.js"></script>
     <script src="requests.js"></script>
     <script src="panier.js"></script>
 </body>

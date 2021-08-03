@@ -21,10 +21,14 @@ a:hover {
   color: unset;
 }
 
-#app, #products, #form {
+#products {
+  margin-bottom: 3em;
+}
+
+#app, main {
   margin: 0 auto;
-  width: 90%;
   gap: 3em;
+  width: 90%;
 }
 
 #app .card {
@@ -33,6 +37,14 @@ a:hover {
   grid-template-rows: 1fr 0.25fr;
   padding: 0;
   width: 25em;
+}
+
+#product {
+  margin: 0 auto;
+}
+
+.emptyBasket {
+  margin: 5.5em auto
 }
 
 #product .card {
@@ -61,8 +73,6 @@ td {
   color: lightslategray;
 }
 
-
-
 .lenses {
   display: flex;
   flex-direction: row;
@@ -86,8 +96,8 @@ td {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-form {
-  width: 90%;
+.form {
+  margin: auto;
 }
 
 footer {

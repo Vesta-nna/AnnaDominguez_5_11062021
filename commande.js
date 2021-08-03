@@ -1,12 +1,13 @@
+// Fonction pour préparer la mise en page de la validation de commande
 const formatOrder = async () => {
   if (localStorage.getItem('orderId')) {
-    console.log(localStorage.getItem('orderId'))
     const orderId = JSON.parse(localStorage.getItem('orderId'))
-    console.log(orderId)
-    document.getElementById('orderId').innerHTML = orderId
+    document.getElementById('orderId').innerHTML = orderId.split('-')[0]
   }
-};
+}
 
-formatOrder();
+formatOrder()
+getBasket()
 
-localStorage.clear();
+// Vide les données du localStorage
+localStorage.clear()
