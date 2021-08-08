@@ -7,7 +7,7 @@ const formatOrder = async () => {
 }
 
 formatOrder()
-getBasket()
+getBasket(false)
 
 // Vide les données du localStorage
 localStorage.clear()

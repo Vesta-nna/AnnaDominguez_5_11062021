@@ -11,9 +11,13 @@ const deleteProduct = (itemId, itemLens) => {
   let products = [];
   if (localStorage.getItem('products')) {
     products = JSON.parse(localStorage.getItem('products'))
-    const index = products.findIndex(product => product.id == itemId && product.lens == itemLens)
-    products.splice(index, 1)
-    localStorage.setItem('products', JSON.stringify(products))
+    if (products.length == 1) {
+        localStorage.clear()
+    } else {
+      const index = products.findIndex(product => product.id == itemId && product.lens == itemLens)
+      products.splice(index, 1)
+      localStorage.setItem('products', JSON.stringify(products))
+    }
     alert('Le produit a été supprimé de votre panier')
     window.location.reload()
   }

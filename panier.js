@@ -38,7 +38,7 @@ if (localStorage.getItem('products')) {
   // Remplissage du panier
   getBasket(true)
   // Création de l'envoie du formulaire et des produits
-  const form = document.getElementById("form")
+  const form = document.getElementById("form")x
   form.addEventListener("submit", order)
 // Mise en page s'il n'y a pas de produit dans le panier
 } else {

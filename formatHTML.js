@@ -10,11 +10,11 @@ const formatIndexProduct = item => `<a href="produit.html?id=${item._id}" class=
 </a>`
 
 // Création du HTML pour une ligne de tableau de produit
-const formatBasketProduct = (product, lenses, index) => `<tr>
+const formatBasketProduct = (product, lenses, index, deleteProduct) => `<tr>
   <th scope="row" class="align-middle">${index}</th>
   <td class="align-middle"><img src="${product.imageUrl}" alt="${product.name}"></td>
   <td class="align-middle">${product.name}</td>
-  <td>${lenses.map(item => formatLens(item, true)).join('')}</td>
+  <td>${lenses.map(item => formatLens(item, deleteProduct)).join('')}</td>
   <td class="align-middle">${formatPrice(product.price)}</td>
   <td class="align-middle">x${lenses.length}</td>
   </tr>`
@@ -45,7 +45,7 @@ const formatLens = (item, supp = false) => `<p class="lenses card-text">${item.l
 // Mise en page du HTML pour la page de panier avec le formulaire
 const formatBasket = () => `<section id="products">
         <div class="table-responsive">
-          <table class="table">
+          <table class="table table-bordered">
             <thead class="table-dark">
               <tr>
                 <th scope="col">#</th>
@@ -59,8 +59,10 @@ const formatBasket = () => `<section id="products">
             <tbody id="table-body">
             </tbody>
             <tfoot>
-              <th>Total</tr>
-              <tr id="total-price"></tr>
+              <tr>
+                <th scope="row">Total</th>
+                <th colspan="6" id="total-price"></td>
+              </tr>
             </tfoot>
           </table>
         </div>
@@ -84,7 +86,7 @@ const formatBasket = () => `<section id="products">
           </div>
           <div class="col-md-6">
             <label for="validationEmail" class="form-label">Email address</label>
-            <input type="text" class="form-control" id="validationEmail" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" placeholder="name@example.com" required>
+            <input type="text" class="form-control" id="validationEmail" pattern="\\S+@\\S+\\.[\\S+]{2,5}" placeholder="name@example.com" required>
             <div class="valid-feedback">Ok!</div>
             <div class="invalid-feedback">Email invalide</div>
           </div>
@@ -96,7 +98,7 @@ const formatBasket = () => `<section id="products">
           </div>
           <div class="col-md-3">
             <label for="validationCity" class="form-label">Ville</label>
-            <input type="text" class="form-control" id="validationCity" placeholder="Paris" pattern="^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$" required>
+            <input type="text" class="form-control" id="validationCity" placeholder="Paris" pattern="^[a-zA-ZéèîïÉÈÎÏ][A-zéèêàçîï]+([-' \s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$" required>
             <div class="valid-feedback">Ok!</div>
             <div class="invalid-feedback">Ville invalide</div>
           </div>
