@@ -11,6 +11,7 @@ const deleteProduct = (itemId, itemLens) => {
   let products = [];
   if (localStorage.getItem('products')) {
     products = JSON.parse(localStorage.getItem('products'))
+    // S'il sagit du seul produit dans la liste, suppression de l'objet dans localStorage
     if (products.length == 1) {
         localStorage.clear()
     } else {
