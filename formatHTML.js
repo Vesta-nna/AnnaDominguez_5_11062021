@@ -31,7 +31,7 @@ const formatProduct = item => `<article class="card">
       </select>
       </p>
       <p class="card-text">Prix: ${formatPrice(item.price)}</p>
-      <button onclick="addProduct('${item._id}')" class="btn btn-primary">Ajouter au panier</a>
+      <button onclick="addProduct('${item._id}')" class="btn btn-dark">Ajouter au panier</a>
     </div>
   <article>`
 
