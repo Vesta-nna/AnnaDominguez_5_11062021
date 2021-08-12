@@ -1,7 +1,7 @@
 const formatPrice = price => `€${price / 100}.00`
 
 // Création du HTML pour une carte de produit sur la page d'accueil
-const formatIndexProduct = item => `<a href="produit.html?id=${item._id}" class="card">
+const formatIndexProduct = item => `<a href="./pages/produit.html?id=${item._id}" class="card">
   <img src="${item.imageUrl}" class="full" alt="${item.name}">
   <div class="card-body">
     <h5 class="card-title">${item.name}</h5>
