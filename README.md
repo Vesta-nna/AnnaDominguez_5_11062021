@@ -1,5 +1,3 @@
-# AnnaDominguez_5_11062021
-
 # Construire un site de e-commerce
 
 ## Architecture générale
@@ -21,6 +19,13 @@ renvoyées au back-end. Par exemple, pas de texte dans les champs date ;
 commande, et indiquant le prix total et l'identifiant de commande envoyé
 par le serveur.
 
+## Produits présentés
+Dans un premier temps, une seule catégorie de produits sera présentée.
+Choix à faire entre les 3 propositions suivantes :
+* ours en peluche faits à la main ;
+* caméras vintage ;
+* meubles en chêne
+
 
 ## Informations complémentaires
 Pour le MVP, la personnalisation du produit ne sera pas fonctionnelle : la page
@@ -38,3 +43,17 @@ Tous les produits possèdent les attributs suivants :
 Champ | Type
 ----- | ----
 id | ObjectID
+name | string
+price | number
+description | string
+imageUrl | string
+
+Chaque type de produit comporte un tableau contenant les strings
+correspondant aux options de personnalisation :
+
+Type de produits | Tableau de personnalisation
+---------------- | ---------------------------
+Caméras | lentilles
+Ours en peluches | couleurs
+Meubles en chêne | vernis
+
