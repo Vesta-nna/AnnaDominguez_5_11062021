@@ -11,7 +11,7 @@ Then go to the front file on a terminal, and write `open index.html`, the projec
 ![Accueil](../assets/images/screencapture-file-Users-vesta-Desktop-OpenClassrooms-P05-AnnaDominguez-5-11062021-index-html-2021-08-12-16_45_21.png)
 
 ### Article
-![Accueil](../assets/images/)
+![Accueil](../assets/images/screencapture-file-Users-vesta-Desktop-OpenClassrooms-P05-AnnaDominguez-5-11062021-front-pages-produit-html-2021-08-12-16_46_27.png)
 
 ### Panier
 ![Panier](../assets/images/screencapture-file-Users-vesta-Desktop-OpenClassrooms-P05-AnnaDominguez-5-11062021-front-pages-panier-html-2021-08-12-16_46_47.png)
