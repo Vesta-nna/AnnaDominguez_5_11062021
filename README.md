@@ -57,3 +57,10 @@ Caméras | lentilles
 Ours en peluches | couleurs
 Meubles en chêne | vernis
 
+#Technologies utilisées
+HTML, CSS, JavaScript
+
+## URL des API
+* Ours en peluche faits à la main : http://localhost:3000/api/teddies
+* Caméras vintage : http://localhost:3000/api/cameras
+* Meubles en chêne : http://localhost:3000/api/furniture
