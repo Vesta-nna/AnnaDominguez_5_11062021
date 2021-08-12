@@ -1,4 +1,4 @@
-# Orinoco
+# Orinoco Front
 
 Welcome to Orinoco shop!
 You should read the [back Reamdme](https://github.com/Vesta-nna/AnnaDominguez_5_11062021/blob/main/back/README.md) in order to launch the projet
