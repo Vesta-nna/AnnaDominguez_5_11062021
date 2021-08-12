@@ -34,3 +34,6 @@ Les inputs des utilisateurs doivent être validés avant l’envoi à l’API.
 
 ## Types de données
 Tous les produits possèdent les attributs suivants :
+
+Champ | Type
+______|_____
