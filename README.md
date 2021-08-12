@@ -73,3 +73,9 @@ Verb | Paramètre | Corps de la demande prévue | Réponse
 GET | / | - | Retourne le tableau de tous les éléments
 GET | /:id | - | Renvoie l'élément correspondant à identifiant given_id
 POST | /order | Requête JSON contenant un objet de contact et un tableau de produits | Retourne l'objet contact, le tableau produits et orderId (string)
+
+## Validation des données
+Pour les routes POST, l’objet contact envoyé au serveur doit contenir les champs
+firstName, lastName, address, city et email. Le tableau des produits envoyé au
+backend doit être un array de strings products. Les types de ces champs et leur
+présence doivent être validés avant l’envoi des données au serveur.
