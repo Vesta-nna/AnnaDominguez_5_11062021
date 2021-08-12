@@ -37,4 +37,4 @@ Tous les produits possèdent les attributs suivants :
 
 Champ | Type
 ______|_____
-id    |ObjectID
+id | ObjectID
