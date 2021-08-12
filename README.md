@@ -36,5 +36,5 @@ Les inputs des utilisateurs doivent être validés avant l’envoi à l’API.
 Tous les produits possèdent les attributs suivants :
 
 Champ | Type
-_____ | ____
+----- | ----
 id | ObjectID
