@@ -1,5 +1,7 @@
 # Construire un site de e-commerce
 
+## Lancer le projet
+Merci de regarder les Readme du (https://github.com/Vesta-nna/AnnaDominguez_5_11062021/blob/main/back/README.md)[back] ainsi que celui du (https://github.com/Vesta-nna/AnnaDominguez_5_11062021/blob/main/front/Readme.md)[front] pour connaître l'utilisation du projet
 ## Architecture générale
 L’application web sera composée de 4 pages :
 
