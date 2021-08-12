@@ -1,0 +1,118 @@
+html, body {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+header {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: unset;
+}
+
+#products {
+  margin-bottom: 3em;
+}
+
+#app, main {
+  margin: 0 auto;
+  gap: 3em;
+  width: 90%;
+}
+
+#app .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.25fr;
+  padding: 0;
+  width: 25em;
+}
+
+#product {
+  margin: 0 auto;
+}
+
+.emptyBasket {
+  margin: 5.5em auto
+}
+
+#product .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.25fr;
+  padding: 0;
+  width: 90%;
+}
+
+td img {
+  width: 15em;
+}
+
+td {
+  min-width: 10em;
+}
+
+.card img {
+  width: 100%;
+  grid-row: 1;
+  object-fit: cover;
+}
+
+.card .price {
+  color: lightslategray;
+}
+
+.lenses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more {
+  width: 90%;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 15em;
+}
+
+.full {
+  width: 90%;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.form {
+  margin: auto;
+}
+
+footer {
+  background-color: black;
+  height: 10em;
+}
+
+footer ul {
+  display: flex;
+  padding-top: 5em;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+footer i {
+  color: white;
+}
