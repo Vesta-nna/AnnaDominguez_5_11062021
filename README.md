@@ -64,3 +64,12 @@ HTML, CSS, JavaScript
 * Ours en peluche faits à la main : http://localhost:3000/api/teddies
 * Caméras vintage : http://localhost:3000/api/cameras
 * Meubles en chêne : http://localhost:3000/api/furniture
+
+## Paramètres des API
+Chaque API contient 3 paramètres :
+
+Verb | Paramètre | Corps de la demande prévue | Réponse
+---- | --------- | -------------------------- | -------
+GET | / | - | Retourne le tableau de tous les éléments
+GET | /:id | - | Renvoie l'élément correspondant à identifiant given_id
+POST | /order | Requête JSON contenant un objet de contact et un tableau de produits | Retourne l'objet contact, le tableau produits et orderId (string)
